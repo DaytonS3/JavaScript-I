@@ -57,6 +57,20 @@ console.log(Antonietta.multiply(3,4));
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
+const parent_a = {
+  name: "susan",
+  age: 70,
+    child: {
+      name: "george",
+      age: 50,
+       grandchild: {
+          name: "sam",
+          age: 30
+       }
+     }
+}
+
+
 // 1. Create a parent object with properties for name and age.  Make the name Susan and the age 70.
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
@@ -65,11 +79,12 @@ console.log(Antonietta.multiply(3,4));
 const parent = {}
 
 // Log the parent object's name
-
+console.log(parent_a.name);
 // Log the child's age
-
+console.log(parent_a.child.name);
 // Log the name and age of the grandchild
-
+console.log(parent_a.child.grandchild.name);
+console.log(parent_a.child.grandchild.age);
 // Have the parent speak
 
 // Have the child speak
